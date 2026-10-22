@@ -33,7 +33,10 @@ When a repository is connected or the user asks to use GitHub, treat it as the s
 
 Treat these as durable user preferences unless the user explicitly overrides them. The project's own approved design spec takes precedence over generic preferences.
 
-- **Minimalist UI:** clear hierarchy, breathing room, restrained color, few elements, concise labels. Avoid excessive explanatory copy, decorative blocks, nested cards, and unnecessary borders.
+- **Minimalist UI:** clear hierarchy, breathing room, restrained color, few elements, and concise labels. Avoid excessive explanatory copy, decorative blocks, nested cards, and unnecessary borders.
+- **Minimal on-screen text:** the app interface must not contain redundant explanatory paragraphs, tutorial-like descriptions, repeated instructions, verbose empty states, or text that merely explains an obvious control. Prefer short labels, familiar icons with accessible descriptions, and clear visual hierarchy. Show helper text only when it is necessary to complete a task, understand a non-obvious consequence, resolve an error, or make an informed choice.
+- Keep product UI copy action-oriented and brief. Do not add headings, subtitles, captions, onboarding explanations, confirmation prose, or footnotes just to fill space. For destructive, irreversible, permission-sensitive, or otherwise consequential actions, retain the minimum explanation needed for informed consent and safety.
+- Keep essential accessibility labels and error messages; concise UI does not mean removing necessary accessibility or safety information.
 - **Purposeful interaction:** use intentional micro-interactions when they help, such as spring settling, subtle compression/stretch, shared motion, liquid fill, and smooth easing. Motion must not interfere with touch, scrolling, readability, accessibility, or performance.
 - Prefer compact capsule controls and coherent radii, shadows, and transparency where appropriate.
 - Use native platform/Compose animation, Canvas, and Path primitives when they meet the intent without unnecessary dependencies.
